@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en" data-filter="on">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sans Bullshit Sans</title>
+    <meta
+      name="description"
+      content="The font that replaces 237 corporate buzzwords with a censor bar. Try it, download it, set your marketing copy in it."
+    />
+    <link rel="canonical" href="https://sansbullshitsans.org/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sansbullshitsans.org/" />
+    <meta property="og:title" content="Sans Bullshit Sans" />
+    <meta
+      property="og:description"
+      content="The font that replaces 237 corporate buzzwords with a censor bar."
+    />
+    <meta property="og:image" content="https://sansbullshitsans.org/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f7f5ff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#150d2e" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/SansBullshitSans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/filter.js"></script>
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="masthead">
+      <a class="wordmark" href="/" aria-label="Sans Bullshit Sans, home">
+        <span class="wordmark-bar" aria-hidden="true"></span>
+        Sans Bullshit Sans
+      </a>
+      <button
+        class="filter-toggle"
+        type="button"
+        aria-pressed="true"
+        id="filter-toggle"
+      >
+        <span class="filter-toggle-label">Bullshit filter</span>
+        <span class="switch" aria-hidden="true"><span class="knob"></span></span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="visually-hidden">Sans Bullshit Sans</h1>
+        <p class="hero-sentence" id="hero-sentence">Our <span class="phrase">thought leader</span> wants to leverage synergy and drive a <span class="phrase">paradigm shift</span> with a <span class="phrase">best of breed</span>, <span class="phrase">real time</span> solution <span class="phrase">at scale</span>.</p>
+        <div class="hero-foot">
+          <p class="hero-lede">
+            Sans Bullshit Sans is a free font that stamps “bullshit” over 237
+            buzzwords as you type. Everything on this page is set in it.
+          </p>
+          <div class="actions">
+            <a class="button" href="#try">Try it yourself</a>
+            <a
+              class="button button-quiet"
+              href="/fonts/SansBullshitSans.ttf"
+              download
+              >Download the font</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="try" id="try" aria-labelledby="try-title">
+        <div class="section-head">
+          <h2 id="try-title">Paste in your worst marketing blurb</h2>
+          <p>
+            Or the last all-hands deck. Or your boss’s LinkedIn bio. Each
+            buzzword gets stamped the moment its last letter lands.
+          </p>
+        </div>
+
+        <div class="editor">
+          <label class="visually-hidden" for="editor">Text to filter</label>
+          <textarea
+            id="editor"
+            spellcheck="false"
+            rows="5"
+            placeholder="Write something visionary…"
+          >
+We’re a lean, agile startup on a mission to disrupt the status quo with seamless, immersive storytelling.</textarea
+          >
+          <div class="editor-actions">
+            <button class="button" type="button" id="generate">
+              Write me some bullshit
+            </button>
+            <button class="button button-quiet" type="button" id="clear">
+              Clear
+            </button>
+          </div>
+        </div>
+        <p class="fineprint">
+          Matching is case sensitive, so “Synergy” at the start of a sentence
+          slips through.
+        </p>
+      </section>
+
+      <section class="wall" aria-labelledby="wall-title">
+        <div class="section-head">
+          <h2 id="wall-title">The 237 words it won’t print</h2>
+          <p>Hover or tap a stamp to see the word underneath.</p>
+        </div>
+        <p class="wall-words">
+          <button type="button" class="bs" data-word="accelerate">accelerate</button>
+          <button type="button" class="bs" data-word="accountability">accountability</button>
+          <button type="button" class="bs" data-word="action items">action items</button>
+          <button type="button" class="bs" data-word="actionable">actionable</button>
+          <button type="button" class="bs" data-word="aggregator">aggregator</button>
+          <button type="button" class="bs" data-word="agile">agile</button>
+          <button type="button" class="bs" data-word="algorithm">algorithm</button>
+          <button type="button" class="bs" data-word="alignment">alignment</button>
+          <button type="button" class="bs" data-word="analytics">analytics</button>
+          <button type="button" class="bs" data-word="as a service">as a service</button>
+          <button type="button" class="bs" data-word="at scale">at scale</button>
+          <button type="button" class="bs" data-word="at the end of the day">at the end of the day</button>
+          <button type="button" class="bs" data-word="bandwidth">bandwidth</button>
+          <button type="button" class="bs" data-word="below the fold">below the fold</button>
+          <button type="button" class="bs" data-word="best of breed">best of breed</button>
+          <button type="button" class="bs" data-word="best practices">best practices</button>
+          <button type="button" class="bs" data-word="beta">beta</button>
+          <button type="button" class="bs" data-word="big data">big data</button>
+          <button type="button" class="bs" data-word="bleeding edge">bleeding edge</button>
+          <button type="button" class="bs" data-word="blueprint">blueprint</button>
+          <button type="button" class="bs" data-word="boil the ocean">boil the ocean</button>
+          <button type="button" class="bs" data-word="bottom line">bottom line</button>
+          <button type="button" class="bs" data-word="bounce rate">bounce rate</button>
+          <button type="button" class="bs" data-word="brand evangelist">brand evangelist</button>
+          <button type="button" class="bs" data-word="bricks and clicks">bricks and clicks</button>
+          <button type="button" class="bs" data-word="bring to the party">bring to the party</button>
+          <button type="button" class="bs" data-word="bring to the table">bring to the table</button>
+          <button type="button" class="bs" data-word="brogrammer">brogrammer</button>
+          <button type="button" class="bs" data-word="change agent">change agent</button>
+          <button type="button" class="bs" data-word="clickthrough">clickthrough</button>
+          <button type="button" class="bs" data-word="close the loop">close the loop</button>
+          <button type="button" class="bs" data-word="cloud">cloud</button>
+          <button type="button" class="bs" data-word="codify">codify</button>
+          <button type="button" class="bs" data-word="collaboration">collaboration</button>
+          <button type="button" class="bs" data-word="collateral">collateral</button>
+          <button type="button" class="bs" data-word="come to Jesus">come to Jesus</button>
+          <button type="button" class="bs" data-word="content strategy">content strategy</button>
+          <button type="button" class="bs" data-word="convergence">convergence</button>
+          <button type="button" class="bs" data-word="coopetition">coopetition</button>
+          <button type="button" class="bs" data-word="create value">create value</button>
+          <button type="button" class="bs" data-word="credibility">credibility</button>
+          <button type="button" class="bs" data-word="cross the chasm">cross the chasm</button>
+          <button type="button" class="bs" data-word="crowdfund">crowdfund</button>
+          <button type="button" class="bs" data-word="crowdsource">crowdsource</button>
+          <button type="button" class="bs" data-word="curate">curate</button>
+          <button type="button" class="bs" data-word="cyber">cyber</button>
+          <button type="button" class="bs" data-word="data mining">data mining</button>
+          <button type="button" class="bs" data-word="deep dive">deep dive</button>
+          <button type="button" class="bs" data-word="design pattern">design pattern</button>
+          <button type="button" class="bs" data-word="digital divide">digital divide</button>
+          <button type="button" class="bs" data-word="digital natives">digital natives</button>
+          <button type="button" class="bs" data-word="discovery">discovery</button>
+          <button type="button" class="bs" data-word="disruptive">disruptive</button>
+          <button type="button" class="bs" data-word="diversity">diversity</button>
+          <button type="button" class="bs" data-word="DNA">DNA</button>
+          <button type="button" class="bs" data-word="do more with less">do more with less</button>
+          <button type="button" class="bs" data-word="downsizing">downsizing</button>
+          <button type="button" class="bs" data-word="drink the Kool Aid">drink the Kool Aid</button>
+          <button type="button" class="bs" data-word="DRM">DRM</button>
+          <button type="button" class="bs" data-word="eat your own dog food">eat your own dog food</button>
+          <button type="button" class="bs" data-word="emerging">emerging</button>
+          <button type="button" class="bs" data-word="empathy">empathy</button>
+          <button type="button" class="bs" data-word="enable">enable</button>
+          <button type="button" class="bs" data-word="engagement">engagement</button>
+          <button type="button" class="bs" data-word="engaging">engaging</button>
+          <button type="button" class="bs" data-word="enterprise">enterprise</button>
+          <button type="button" class="bs" data-word="entitled">entitled</button>
+          <button type="button" class="bs" data-word="epic">epic</button>
+          <button type="button" class="bs" data-word="evangelist">evangelist</button>
+          <button type="button" class="bs" data-word="exit strategy">exit strategy</button>
+          <button type="button" class="bs" data-word="eyeballs">eyeballs</button>
+          <button type="button" class="bs" data-word="face time">face time</button>
+          <button type="button" class="bs" data-word="fail fast">fail fast</button>
+          <button type="button" class="bs" data-word="fail forward">fail forward</button>
+          <button type="button" class="bs" data-word="fanboy">fanboy</button>
+          <button type="button" class="bs" data-word="finalize">finalize</button>
+          <button type="button" class="bs" data-word="first or best">first or best</button>
+          <button type="button" class="bs" data-word="flat">flat</button>
+          <button type="button" class="bs" data-word="flow">flow</button>
+          <button type="button" class="bs" data-word="freemium">freemium</button>
+          <button type="button" class="bs" data-word="funded">funded</button>
+          <button type="button" class="bs" data-word="funnel">funnel</button>
+          <button type="button" class="bs" data-word="fusion">fusion</button>
+          <button type="button" class="bs" data-word="game changer">game changer</button>
+          <button type="button" class="bs" data-word="gameify">gameify</button>
+          <button type="button" class="bs" data-word="gamification">gamification</button>
+          <button type="button" class="bs" data-word="glamour metrics">glamour metrics</button>
+          <button type="button" class="bs" data-word="globalization">globalization</button>
+          <button type="button" class="bs" data-word="green">green</button>
+          <button type="button" class="bs" data-word="groupthink">groupthink</button>
+          <button type="button" class="bs" data-word="growth hack">growth hack</button>
+          <button type="button" class="bs" data-word="guru">guru</button>
+          <button type="button" class="bs" data-word="headlights">headlights</button>
+          <button type="button" class="bs" data-word="heads down">heads down</button>
+          <button type="button" class="bs" data-word="herding cats">herding cats</button>
+          <button type="button" class="bs" data-word="high level">high level</button>
+          <button type="button" class="bs" data-word="holistic">holistic</button>
+          <button type="button" class="bs" data-word="homerun">homerun</button>
+          <button type="button" class="bs" data-word="html5">html5</button>
+          <button type="button" class="bs" data-word="hyperlocal">hyperlocal</button>
+          <button type="button" class="bs" data-word="iconic">iconic</button>
+          <button type="button" class="bs" data-word="ideation">ideation</button>
+          <button type="button" class="bs" data-word="ignite">ignite</button>
+          <button type="button" class="bs" data-word="immersive">immersive</button>
+          <button type="button" class="bs" data-word="impact">impact</button>
+          <button type="button" class="bs" data-word="impressions">impressions</button>
+          <button type="button" class="bs" data-word="in the weeds">in the weeds</button>
+          <button type="button" class="bs" data-word="industry 4.0">industry 4.0</button>
+          <button type="button" class="bs" data-word="infographic">infographic</button>
+          <button type="button" class="bs" data-word="innovate">innovate</button>
+          <button type="button" class="bs" data-word="integrated">integrated</button>
+          <button type="button" class="bs" data-word="internet of things">internet of things</button>
+          <button type="button" class="bs" data-word="IoT">IoT</button>
+          <button type="button" class="bs" data-word="jellyfish">jellyfish</button>
+          <button type="button" class="bs" data-word="knee deep">knee deep</button>
+          <button type="button" class="bs" data-word="lean">lean</button>
+          <button type="button" class="bs" data-word="lean in">lean in</button>
+          <button type="button" class="bs" data-word="level up">level up</button>
+          <button type="button" class="bs" data-word="leverage">leverage</button>
+          <button type="button" class="bs" data-word="lizard brain">lizard brain</button>
+          <button type="button" class="bs" data-word="long tail">long tail</button>
+          <button type="button" class="bs" data-word="low hanging fruit">low hanging fruit</button>
+          <button type="button" class="bs" data-word="make it pop">make it pop</button>
+          <button type="button" class="bs" data-word="make the logo bigger">make the logo bigger</button>
+          <button type="button" class="bs" data-word="maker">maker</button>
+          <button type="button" class="bs" data-word="marketing funnel">marketing funnel</button>
+          <button type="button" class="bs" data-word="mashup">mashup</button>
+          <button type="button" class="bs" data-word="milestone">milestone</button>
+          <button type="button" class="bs" data-word="mindshare">mindshare</button>
+          <button type="button" class="bs" data-word="modernity">modernity</button>
+          <button type="button" class="bs" data-word="monetize">monetize</button>
+          <button type="button" class="bs" data-word="moonshot">moonshot</button>
+          <button type="button" class="bs" data-word="moving forward">moving forward</button>
+          <button type="button" class="bs" data-word="MVP">MVP</button>
+          <button type="button" class="bs" data-word="netiquette">netiquette</button>
+          <button type="button" class="bs" data-word="next gen">next gen</button>
+          <button type="button" class="bs" data-word="next level">next level</button>
+          <button type="button" class="bs" data-word="nextify">nextify</button>
+          <button type="button" class="bs" data-word="ninja">ninja</button>
+          <button type="button" class="bs" data-word="offshoring">offshoring</button>
+          <button type="button" class="bs" data-word="on the runway">on the runway</button>
+          <button type="button" class="bs" data-word="open the kimono">open the kimono</button>
+          <button type="button" class="bs" data-word="operationalize">operationalize</button>
+          <button type="button" class="bs" data-word="opportunity">opportunity</button>
+          <button type="button" class="bs" data-word="optimize">optimize</button>
+          <button type="button" class="bs" data-word="organic">organic</button>
+          <button type="button" class="bs" data-word="out of pocket">out of pocket</button>
+          <button type="button" class="bs" data-word="outside the box">outside the box</button>
+          <button type="button" class="bs" data-word="outsourcing">outsourcing</button>
+          <button type="button" class="bs" data-word="over the top">over the top</button>
+          <button type="button" class="bs" data-word="p2p">p2p</button>
+          <button type="button" class="bs" data-word="paradigm shift">paradigm shift</button>
+          <button type="button" class="bs" data-word="patent pending design">patent pending design</button>
+          <button type="button" class="bs" data-word="peeling the onion">peeling the onion</button>
+          <button type="button" class="bs" data-word="personal brand">personal brand</button>
+          <button type="button" class="bs" data-word="ping">ping</button>
+          <button type="button" class="bs" data-word="pipeline">pipeline</button>
+          <button type="button" class="bs" data-word="pivot">pivot</button>
+          <button type="button" class="bs" data-word="pop">pop</button>
+          <button type="button" class="bs" data-word="portal">portal</button>
+          <button type="button" class="bs" data-word="proactive">proactive</button>
+          <button type="button" class="bs" data-word="productize">productize</button>
+          <button type="button" class="bs" data-word="proof of concept">proof of concept</button>
+          <button type="button" class="bs" data-word="public facing">public facing</button>
+          <button type="button" class="bs" data-word="pull the trigger">pull the trigger</button>
+          <button type="button" class="bs" data-word="push the envelope">push the envelope</button>
+          <button type="button" class="bs" data-word="qualified leads">qualified leads</button>
+          <button type="button" class="bs" data-word="reach out">reach out</button>
+          <button type="button" class="bs" data-word="real time">real time</button>
+          <button type="button" class="bs" data-word="reimagining">reimagining</button>
+          <button type="button" class="bs" data-word="reinvent the wheel">reinvent the wheel</button>
+          <button type="button" class="bs" data-word="responsive">responsive</button>
+          <button type="button" class="bs" data-word="revolutionize">revolutionize</button>
+          <button type="button" class="bs" data-word="rich">rich</button>
+          <button type="button" class="bs" data-word="rightshoring">rightshoring</button>
+          <button type="button" class="bs" data-word="rightsizing">rightsizing</button>
+          <button type="button" class="bs" data-word="rockstar">rockstar</button>
+          <button type="button" class="bs" data-word="ROI">ROI</button>
+          <button type="button" class="bs" data-word="scalability">scalability</button>
+          <button type="button" class="bs" data-word="scratch your own itch">scratch your own itch</button>
+          <button type="button" class="bs" data-word="scrum">scrum</button>
+          <button type="button" class="bs" data-word="sea change">sea change</button>
+          <button type="button" class="bs" data-word="seamless">seamless</button>
+          <button type="button" class="bs" data-word="SEM">SEM</button>
+          <button type="button" class="bs" data-word="SEO">SEO</button>
+          <button type="button" class="bs" data-word="sexy">sexy</button>
+          <button type="button" class="bs" data-word="shift">shift</button>
+          <button type="button" class="bs" data-word="sizzle">sizzle</button>
+          <button type="button" class="bs" data-word="slam dunk">slam dunk</button>
+          <button type="button" class="bs" data-word="social currency">social currency</button>
+          <button type="button" class="bs" data-word="social media">social media</button>
+          <button type="button" class="bs" data-word="social media expert">social media expert</button>
+          <button type="button" class="bs" data-word="social proof">social proof</button>
+          <button type="button" class="bs" data-word="soft launch">soft launch</button>
+          <button type="button" class="bs" data-word="solution">solution</button>
+          <button type="button" class="bs" data-word="stakeholder">stakeholder</button>
+          <button type="button" class="bs" data-word="standup">standup</button>
+          <button type="button" class="bs" data-word="startup">startup</button>
+          <button type="button" class="bs" data-word="stealth mode">stealth mode</button>
+          <button type="button" class="bs" data-word="stealth startup">stealth startup</button>
+          <button type="button" class="bs" data-word="sticky">sticky</button>
+          <button type="button" class="bs" data-word="storify">storify</button>
+          <button type="button" class="bs" data-word="storytelling">storytelling</button>
+          <button type="button" class="bs" data-word="strategery">strategery</button>
+          <button type="button" class="bs" data-word="strategy">strategy</button>
+          <button type="button" class="bs" data-word="sustainability">sustainability</button>
+          <button type="button" class="bs" data-word="sweat your assets">sweat your assets</button>
+          <button type="button" class="bs" data-word="synergistic">synergistic</button>
+          <button type="button" class="bs" data-word="synergy">synergy</button>
+          <button type="button" class="bs" data-word="take it offline">take it offline</button>
+          <button type="button" class="bs" data-word="team building">team building</button>
+          <button type="button" class="bs" data-word="tee off">tee off</button>
+          <button type="button" class="bs" data-word="the cloud">the cloud</button>
+          <button type="button" class="bs" data-word="the easiest way to">the easiest way to</button>
+          <button type="button" class="bs" data-word="thought leader">thought leader</button>
+          <button type="button" class="bs" data-word="tiger team">tiger team</button>
+          <button type="button" class="bs" data-word="tollgate">tollgate</button>
+          <button type="button" class="bs" data-word="top of mind">top of mind</button>
+          <button type="button" class="bs" data-word="touch base">touch base</button>
+          <button type="button" class="bs" data-word="touchpoints">touchpoints</button>
+          <button type="button" class="bs" data-word="transgenerate">transgenerate</button>
+          <button type="button" class="bs" data-word="transparent">transparent</button>
+          <button type="button" class="bs" data-word="trickthrough">trickthrough</button>
+          <button type="button" class="bs" data-word="uber">uber</button>
+          <button type="button" class="bs" data-word="unicorn">unicorn</button>
+          <button type="button" class="bs" data-word="uniques">uniques</button>
+          <button type="button" class="bs" data-word="unpack">unpack</button>
+          <button type="button" class="bs" data-word="user">user</button>
+          <button type="button" class="bs" data-word="usercentric">usercentric</button>
+          <button type="button" class="bs" data-word="value proposition">value proposition</button>
+          <button type="button" class="bs" data-word="viral">viral</button>
+          <button type="button" class="bs" data-word="visibility">visibility</button>
+          <button type="button" class="bs" data-word="vision">vision</button>
+          <button type="button" class="bs" data-word="web scale">web scale</button>
+          <button type="button" class="bs" data-word="webinar">webinar</button>
+          <button type="button" class="bs" data-word="what is our solve">what is our solve</button>
+          <button type="button" class="bs" data-word="wizard">wizard</button>
+        </p>
+      </section>
+
+      <section class="how" aria-labelledby="how-title">
+        <div class="section-head">
+          <h2 id="how-title">How it works</h2>
+        </div>
+        <div class="how-grid">
+          <div class="how-demo" aria-hidden="true">
+            <span class="letters"
+              ><span>s</span><span>y</span><span>n</span><span>e</span
+              ><span>r</span><span>g</span><span>y</span></span
+            >
+            <span class="equals">becomes</span>
+            <span class="result">synergy</span>
+          </div>
+          <div class="prose">
+            <p>
+              Fonts can contain ligatures: rules that replace a run of letters
+              with a single glyph. That’s how “f” and “i” fuse into “ﬁ” in a
+              well-set book.
+            </p>
+            <p>
+              Sans Bullshit Sans abuses the same feature. Its ligature table
+              lists 237 buzzwords, and each one maps to a hand-drawn,
+              Comic Sans-flavoured stamp: “b.s.”, “bullshit”, or, for the
+              truly long-winded, “bull fucking shit”. No scripts, no filters, no
+              server. The bullshit is caught by the typeface itself, anywhere
+              that renders OpenType ligatures.
+            </p>
+            <p>
+              The ligatures are marked as required, so there’s no off switch
+              in CSS. The bullshit filter at the top of this page works by
+              swapping in a copy of the font with the ligature table removed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="use" id="download" aria-labelledby="use-title">
+        <div class="section-head">
+          <h2 id="use-title">Put it on your own site</h2>
+          <p>
+            Free under the Apache License 2.0. Install it on your computer, or
+            drop it into a stylesheet.
+          </p>
+        </div>
+        <div class="use-grid">
+          <ul class="downloads">
+            <li>
+              <a href="/fonts/SansBullshitSans.ttf" download
+                >SansBullshitSans.ttf</a
+              >
+              <span>53 KB, for installing on your computer</span>
+            </li>
+            <li>
+              <a href="/fonts/SansBullshitSans.woff2" download
+                >SansBullshitSans.woff2</a
+              >
+              <span>28 KB, for the web</span>
+            </li>
+            <li>
+              <a href="/fonts/LICENSE.txt">LICENSE.txt</a>
+              <span>Apache License 2.0</span>
+            </li>
+          </ul>
+          <pre class="code" tabindex="0"><code>@font-face {
+  font-family: "Sans Bullshit Sans";
+  src: url("SansBullshitSans.woff2") format("woff2");
+}
+
+body {
+  font-family: "Sans Bullshit Sans", sans-serif;
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="origin" aria-labelledby="origin-title">
+        <div class="section-head">
+          <h2 id="origin-title">Where this came from</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Sans Bullshit Sans was made in 2015 by
+            <a href="https://pixelambacht.nl">Roel Nieskens</a> (PixelAmbacht),
+            based on Droid Sans, as the worked example in his blog post
+            <a href="https://pixelambacht.nl/2015/sans-bullshit-sans/"
+              >about how ligatures work</a
+            >. It lived at sansbullshitsans.com, under the tagline “Leveraging
+            the synergy of ligatures™”.
+          </p>
+          <p>
+            That domain no longer belongs to the project and now redirects to
+            malware. Please don’t visit it. This site keeps the font available
+            and working, with the same joke and a new coat of paint.
+          </p>
+          <ul class="links">
+            <li>
+              <a
+                href="https://web.archive.org/web/20250121184840/https://www.sansbullshitsans.com/"
+                >The original site, on the Internet Archive</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/RoelN/SansBullshitSans"
+                >Font source on GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://pixelambacht.nl/2015/sans-bullshit-sans/"
+                >Roel’s write-up of how it was made</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Sans Bullshit Sans is by Roel Nieskens. This is a fan-run mirror, not
+        affiliated with him.
+      </p>
+      <p>
+        Font licensed under
+        <a href="/fonts/LICENSE.txt">Apache 2.0</a>.
+      </p>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
