@@ -49,7 +49,7 @@ npx serve public      # or: python3 -m http.server -d public
 ## Deploy
 
 1. Import the repo in Vercel (or run `vercel` in this folder). `vercel.json` sets the framework to none and the output directory to `public`.
-2. Add `sansbullshitsans.org` and `www.sansbullshitsans.org` under **Project → Settings → Domains**. `vercel.json` redirects www to the apex domain.
+2. Add `www.sansbullshitsans.org` and `sansbullshitsans.org` under **Project → Settings → Domains**, with the apex redirecting to www. Do the redirect there only: a host redirect in `vercel.json` as well creates a redirect loop.
 
 ## License
 

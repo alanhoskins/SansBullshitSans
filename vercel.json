@@ -5,14 +5,6 @@
   "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.sansbullshitsans.org" }],
-      "destination": "https://sansbullshitsans.org/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/fonts/(.*)",
